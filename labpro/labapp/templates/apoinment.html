@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #a{
+            background-color:black ;
+            color: white;
+            width: 100%;
+            height: 250px;
+            padding-top: 20px;
+            margin-top: 100px;
+        }
+        .container-fluid{
+            background-color: blueviolet;
+        }
+        .git{
+            margin-left: 600px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b114d8de0c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img style="height: 30px; width: 50px;" src="https://tse3.mm.bing.net/th?id=OIP.YPTuxJ2N3MR7xl1868e5WgHaGJ&pid=Api&P=0">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/labapp/userprofile">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class=" git fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-brands fa-slack"></i>
+
+                </a>
+              </li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+      </nav>
+<div>
+    <center><h1>APPOINMENT</h1></center>
+</div>
+<div><br>
+    <br>
+    <br>
+    <center>
+    <form method="post">{% csrf_token %}
+        <table border="1">
+            <tr>
+                <td>
+                    <input type="text" name="name" placeholder="Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="email" placeholder="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="time">
+                        <option value="choose time">Choose Time</option>
+                        <option value="08:00 to 09:00">08:00 to 09:00</option>
+                        <option value="09:00 to 10:00">09:00 to 10:00</option>
+                        <option value="10:00 to 09:00">10:00 to 11:00</option>
+                        <option value="12:00 to 01:00">12:00 to 01:00</option>
+                        <option value="04:00 to 05:00">04:00 to 05:00</option>
+                    </select>
+
+                </td>
+            </tr>
+
+                <td>
+                    <input type="text" name="department" value="{{a.testname}}" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="price" value="{{a.test_price}}" placeholder="">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <button type="submit" class="btn btn-success">make appoinmnent</button>
+            </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+</div>
+<div id="a">
+
+      <center><h3>HEALTH LAB</h3></center><br>
+  <p>MDC Scans & Laboratory, a subsidiary diagnostics business of Medistreams Diagnostics Pvt. Ltd is Kerala's leading medical diagnostic network. MDC has more than 100+ points of presence in India & Maldives. We operate Radiology, Pathology, and Speciality Labs. Our radiology division provides an enormous number of scanning and releases reports through well-qualified and experienced hands. The team of talented and vibrant radiologists makes our diagnostics credible. Moreover, 24*7 hours service of technicians lightens the centre for all kinds of emergencies.<p>
+    <center>
+  <i class="fa-brands fa-facebook"></i> &nbsp;
+  <i class="fa-brands fa-twitter"></i> &nbsp;
+  <i class="fa-brands fa-google-plus-g"></i> &nbsp;
+  <i class="fa-brands fa-youtube"></i> &nbsp;
+  <i class="fa-brands fa-linkedin"></i> &nbsp;
+    </center>
+
+  </div>
+</body>
+</html>

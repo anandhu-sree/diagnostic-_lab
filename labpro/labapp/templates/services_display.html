@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        #a{
+        height:200px;
+        width:285px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img style="height: 30px; width: 50px;" src="https://tse3.mm.bing.net/th?id=OIP.YPTuxJ2N3MR7xl1868e5WgHaGJ&pid=Api&P=0">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/labapp/userprofile">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/labapp/service display/">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/labapp/appoinment/">book an Appoinment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class=" git fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-brands fa-slack"></i>
+
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+<br>
+<br>
+<br>
+<div>
+    <center><h2>Available Services</h2></center>
+</div>
+<br>
+<br>
+<br>
+
+<div class="row">
+    {% for i,j,k,l,m in mylist %}
+
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <img id="a" src="/static/{{i}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{j}}</h5>
+                <p class="card-text">{{l}}</p>
+                <p class="card-text">{{k}}</p>
+             <a href="http://127.0.0.1:8000/labapp/appoinment/{{m}}"><button type="submit">Book an Appoinment</button></a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">ADD Services</h5>
+        <table>
+          <tr>
+            <td>
+              <label>testname</label><br>
+        <input type="text" name="testname"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>description</label><br>
+        <input type="text" name="test_desc"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label> Test price</label><br>
+        <input type="number" name="test_price"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>image</label><br>
+        <input type="file" name="test_image"><br>
+            </td>
+          </tr>
+
+        </table>
+        <p class="card-text"></p>
+        <button type="submit" class="btn btn-primary">Add service</button>
+      </div>
+    </div>
+  </div>
+
+
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" enctype="multipart/form-data">{% csrf_token %}
+  <table border="1" align="center">
+    <tr>
+      <td>
+        <label> TEST NAME</label>
+        <input type="text" name="testname" value="{{ prod.testname }}">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>TEST DESC</label>
+        <input type="text" name="test_desc" value="{{ prod.test_desc }}">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>TEST PRICE</label>
+        <input type="number" name="test_price" value="{{ prod.test_price }}">
+      </td>
+    </tr>
+
+    <tr>
+      {% if prod.test_image %}
+      <td>
+           <img src="{% static li %}" width="200px" height="200px">
+      </td>
+      {% endif %}
+      <td>Image<input type="file" name="test_image"></td>
+    </tr>
+    <tr>
+      <td><button type="submit">Update</button> </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
+</body>
+</html>

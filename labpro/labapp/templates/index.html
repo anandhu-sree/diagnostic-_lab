@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+{% load static %}
+<head>
+	<style>
+		.card{
+		height:480px;
+		}
+		#lab{
+		width:535px;
+		height:450px;
+		}
+	</style>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Health Lab </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'css/pogo-slider.min.css' %}">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!-- LOADER -->
+     <!-- <div id="preloader">
+		<div class="loader">
+			<img src="images/preloader.gif" alt="" />
+		</div>
+    </div>end loader -->
+    <!-- END LOADER -->
+
+	<!-- Start top bar -->
+	<div class="main-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="left-top">
+						<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>
+						<div class="mail-b"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> healthlab@gmail.com</a></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="wel-nots">
+						<div class="left-top">
+						<a class="new-btn-d br-2" href="http://127.0.0.1:8000/labapp/log/"><span>Admin Login</span></a>
+					</div>
+						</div>
+					<div class="right-top">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End top bar -->
+
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+				<a class="navbar-brand" href="index.html"><img src="{% static 'images/logo.png' %}" alt="image"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About Us</a></li>
+                        <li><a class="nav-link" href="#services">Services</a></li>
+						<li><a class="nav-link" href="#appointment">Appointment</a></li>
+                        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+<!--						<li><a class="nav-link" href="#team">Doctor</a></li>-->
+                        <li><a class="nav-link" href="http://127.0.0.1:8000/labapp/user_login/">User Login</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<!-- End header -->
+
+	<!-- Start Banner -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://medicine.exeter.ac.uk/media/universityofexeter/medicalschool/responsiveimages/study/campus/med_sci_lab_2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.hawkeyecollege.edu/webres/Image/programs/medical-laboratory-technology/hero.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://jooinn.com/images/laboratory-experiment-4.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	<!-- End Banner -->
+
+	<!-- Start About us -->
+	<div id="about" class="about-box">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>About Us</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2> Welcome to Health Lab </h2>
+								<p>MDC Scans & Laboratory, a subsidiary diagnostics business of Medistreams Diagnostics Pvt. Ltd is Kerala's leading medical diagnostic network. MDC has more than 100+ points of presence in India & Maldives. We operate Radiology, Pathology, and Speciality Labs. Our radiology division provides an enormous number of scanning and releases reports through well-qualified and experienced hands. The team of talented and vibrant radiologists makes our diagnostics credible. Moreover, 24*7 hours service of technicians lightens the centre for all kinds of emergencies.</p>
+								<a href="#" class="new-btn-d br-2">Read More</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about-m">
+									<img id="lab" src="https://andersoncollege.com/wp-content/uploads/2015/07/medical-lab-assisant-careers.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About us -->
+
+	<!-- Start Services -->
+	<div id="services" class="services-box">
+	<center><h1><b>SERVICES</b></h1></center>
+	<div class="row">
+		<div class="col-4">
+			<div class="card" style="width: 18rem;">
+  <img src="https://media3.s-nbcnews.com/i/newscms/2018_50/2679396/181211-diabetic-prick-reader-ew-133p_851e4c50fd54d7ccd48c3747d7ce01d0.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2 class="card-title">Blood Sugar Test</h2>
+    <p class="card-text">A blood glucose test is a blood test that screens for diabetes by measuring the level of glucose (sugar) in a person’s blood. .</p>
+
+  </div>
+</div>
+		</div>
+		<div class="col-4">
+			<div class="card" style="width: 18rem;">
+  <img src="https://d1dd4ethwnlwo2.cloudfront.net/wp-content/uploads/2017/03/blood-pressure.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2 class="card-title">Blood Pressure test</h2>
+    <p class="card-text">A blood pressure test measures the pressure in the arteries as the heart pumps. A blood pressure test may be done as a part of a routine health checkup or as a screening for high blood pressure .</p>
+
+  </div>
+</div>
+		</div>
+		<div class="col-4">
+			<div class="card" style="width: 18rem;">
+  <img src="https://www.fnha.ca/AboutSite/NewsAndEventsSite/NewsSite/PublishingImages/about/news-and-events/news/what-to-do-if-youve-received-a-covid-19-positive-test-result/covid-19-test.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2 class="card-title">Covid Test</h2>
+    <p class="card-text">The right test depends on the goal. Goals can be to confirm an active COVID-19 infection, identify individuals who are asymptomatic</p>
+
+  </div>
+</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Start Appointment -->
+	<div id="appointment" class="appointment-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Appointment</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="well-block">
+                        <div class="well-title">
+                            <h2>Book an Appointment</h2>
+                        </div>
+                        <form>
+                            <!-- Form start -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Preferred Date</label>
+                                        <input id="date" name="date" type="date" placeholder="Preferred Date" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Preferred Time</label>
+                                        <select id="time" name="time" class="form-control">
+                                            <option value="8:00 to 9:00">8:00 to 9:00</option>
+                                            <option value="9:00 to 10:00">9:00 to 10:00</option>
+                                            <option value="10:00 to 11:00">10:00 to 1:00</option>
+											<option value="11:00 to 12:00">11:00 to 12:00</option>
+											<option value="12:00 to 01:00">12:00 to 1:00</option>
+											<option value="04:00 to 5:00">04:00 to 05:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Department</label>
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control">
+                                            <option value="Choose Department">Choose Department</option>
+											<option value="Gynacology">Blood sugar</option>
+											<option value="Dermatologist">Blood Pressure</option>
+											<option value="Orthology">Covid Test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button id="singlebutton" name="singlebutton" class="new-btn-d br-2">Make An Appointment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- form end -->
+                    </div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="well-block">
+                        <div class="well-title">
+                            <h2>Why Appointment with Us</h2>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">24/7 Hours Available</h4>
+                                <div class="feature-content">
+                                    <p>Integer nec nisi sed mi hendrerit mattis. Vestibulum mi nunc, ultricies quis vehicula et, iaculis in magnestibulum.</p>
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Experienced Staff Available</h4>
+                                <div class="feature-content">
+                                    <p>Aliquam sit amet mi eu libero fermentum bibendum pulvinar a turpis. Vestibulum quis feugiat risus. </p>
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Low Price & Fees</h4>
+                                <div class="feature-content">
+                                    <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Appointment -->
+
+	<!-- Start Gallery -->
+	<div id="gallery" class="gallery-box">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Gallery</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup-gallery row clearfix">
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-01.jpg' %}" alt="">
+						<div class="box-content">
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<ul class="icon">
+								<li><a href="{% static 'images/gallery-01.jpg' %}"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-02.jpg' %}" alt="">
+						<div class="box-content">
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<ul class="icon">
+								<li><a href="{% static 'images/gallery-02.jpg' %}"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-03.jpg' %}" alt="">
+						<div class="box-content">
+							<ul class="icon">
+								<li><a href="images/gallery-03.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-04.jpg' %}" alt="">
+						<div class="box-content">
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<ul class="icon">
+								<li><a href="{% static 'images/gallery-04.jpg' %}"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-05.jpg' %}" alt="">
+						<div class="box-content">
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<ul class="icon">
+								<li><a href="{% static 'images/gallery-05.jpg' %}"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-06.jpg' %}" alt="">
+						<div class="box-content">
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<ul class="icon">
+								<li><a href="{% static 'images/gallery-06.jpg' %}"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-07.jpg' %}" alt="">
+						<div class="box-content">
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<ul class="icon">
+								<li><a href="{% static 'images/gallery-07.jpg' %}"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="{% static 'images/gallery-08.jpg' %}" alt="">
+						<div class="box-content">
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<ul class="icon">
+								<li><a href="{% static 'images/gallery-08.jpg' %}"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Gallery -->
+
+	<!-- Start Team -->
+	<div id="team" class="team-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Our Doctor</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="{% static 'images/img-1.jpg' %}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Williamson</h3>
+                            <span class="post">web developer</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="{% static 'images/img-2.jpg' %}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">kristina</h3>
+                            <span class="post">Web Designer</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="{% static 'images/img-3.jpg' %}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Steve Thomas</h3>
+                            <span class="post">web developer</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+	</div>
+
+	<!-- End Team -->
+
+	<!-- Start Blog -->
+	<div id="blog" class="blog-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Blog</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-inner">
+						<div class="blog-img">
+							<img class="img-fluid" src="{% static 'images/blog-img-01.jpg' %}" alt="" />
+						</div>
+						<div class="item-meta">
+							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
+							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
+							<span class="dti">25 July 2018</span>
+						</div>
+						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-inner">
+						<div class="blog-img">
+							<img class="img-fluid" src="{% static 'images/blog-img-02.jpg' %}" alt="" />
+						</div>
+						<div class="item-meta">
+							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
+							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
+							<span class="dti">25 July 2018</span>
+						</div>
+						<h2>Proin vel sem ut lorem rhoncus lacinia. </h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-inner">
+						<div class="blog-img">
+							<img class="img-fluid" src="{% static 'images/blog-img-03.jpg' %}" alt="" />
+						</div>
+						<div class="item-meta">
+							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
+							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
+							<span class="dti">25 July 2018</span>
+						</div>
+						<h2>Aliquam egestas magna a malesuada rutrum. </h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Blog -->
+
+	<!-- Start Contact -->
+	<div id="contact" class="contact-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Contact us</h2>
+						<p>24/7 customer services available. </p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-12 col-xs-12">
+				  <div class="contact-block">
+					<form id="contactForm">
+					  <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your number">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="submit-button text-center">
+								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+								<div id="msgSubmit" class="h3 text-center hidden"></div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					  </div>
+					</form>
+				  </div>
+				</div>
+
+
+				<div class="col-lg-12 col-xs-12">
+					<div class="left-contact">
+						<h2>Address</h2>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-location-arrow" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Address</h4>
+								<p>seaport airport road,kakkand,ernakulam</p>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Email</h4>
+								<a href="#">healthlabinfo@gmail.com</a><br>
+								<a href="#">labinfo@gmail.com</a>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Phone Number</h4>
+								<a href="#">8138878131</a><br>
+								<a href="#">7012239160</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+
+	<!-- Start Subscribe -->
+	<div class="subscribe-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="subscribe-inner text-center clearfix">
+						<h2>Subscribe</h2>
+						<p>MDC Scans & Laboratory, a subsidiary diagnostics business of Medistreams Diagnostics Pvt. Ltd is Kerala's leading medical diagnostic network.</p>
+						<form action="#" method="post">
+							<div class="form-group">
+								<input class="form-control-1" id="email-1" name="email" placeholder="Email Address" required="" type="text">
+							</div>
+							<div class="form-group">
+								<button type="submit" class="new-btn-d br-2">
+									Subscribe
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Subscribe -->
+
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Health Lab</a> Design By : <a href="https://html.design/">html design</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+	<script src="js/slider-index.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
